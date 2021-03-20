@@ -1,0 +1,137 @@
+.card{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    height: 99px;
+    padding: 19px 16px 16px 0;
+
+}
+
+.cellImg{
+    width: 64px;
+    height: 64px;
+    margin-right: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cellImg img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cellContent{
+    flex-grow: 1;
+}
+
+.cellContent h3{
+    margin: 0;
+    padding: 0;
+    padding-right: 40px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.294;
+    letter-spacing: -0.408px;
+    color: #424242;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.data{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57;
+    letter-spacing: -0.408px;
+    color: #878787; 
+}
+
+.data span{
+    margin-right: 10px;
+}
+
+.data span:last-child{
+    margin-right: 0;
+}
+
+.cardFooter{
+    height: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardPrice{
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 8px;
+}
+
+.cardPrice span:first-child{
+    margin-right: 8px;
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: -0.408px;
+    color: #878787;
+}
+
+.cardPrice span:last-child{
+    width: 74px;
+    text-align: right;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1;
+    letter-spacing: -0.408px;
+    color: #424242;
+}
+
+.raitingStars{
+    display: flex;
+    align-self: flex-end;
+}
+
+.raitingStars span{
+    display: flex;
+    width: 17px;
+    height: 17px;
+    margin-right: 4px;
+}
+
+.raitingStars span:last-child {
+    margin-right: 0;
+}
+
+.cardFavorite{
+    position: absolute;
+    top: 16px;
+    right: 24px;
+	cursor: pointer;
+	font-size: 24px;
+	color: #ECECEC;
+}
+
+.cardFavorite button{
+    display: flex;
+    background: transparent;
+    border: none;
+    padding: 0;
+    color:  #E55858;
+}
+
+.cardFavorite button i{
+    font-size: 24px;
+}
+
+.cardFavorite button:focus{
+    outline: none;
+}
+
+.cardFavorite button:hover {
+	color: #ff0000;
+}
+
+.cardFavoriteActive button{
+	color: #DC0909;
+}
+

@@ -1,0 +1,72 @@
+.input{
+    margin-bottom: 24px;
+}
+
+.input label{
+    display: block;
+    margin-bottom: 7px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.1875;
+    color: #424242;
+}
+
+.input input{
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 16px;
+    background: #FFFFFF;
+    border: 1px solid #C9CACC;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.125;
+}
+
+.input input::placeholder{
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.125;
+}
+
+.input input:focus{
+    outline: none;
+    border: 1px solid #3f3f3f;
+}
+
+.input span{
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.167;
+    color: #EB1717;
+}
+
+.input.invalid label{
+    color: #EB1717
+}
+
+.input.invalid input{
+    border: 1px solid #EB1717;
+    color: #EB1717
+}
+
+.select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0 0 2px rgb(121 88 159 / 0%);
+    border-radius: 4px;
+    color: #383E40;
+    -webkit-transition: all 0.15s ease-out 0s;
+    -moz-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s;
+}

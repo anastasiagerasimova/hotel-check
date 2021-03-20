@@ -1,0 +1,127 @@
+.favorites{
+    font-family: 'Roboto', sans-serif;
+    padding: 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+}
+
+.favorites li{
+    border-bottom: 1px solid rgba(135, 135, 135, 0.2);
+}
+
+.favorites li:last-child{
+    border-bottom: none; 
+}
+
+.favoritesSort{
+
+}
+
+.favoritesSortOptions{
+    margin-bottom: 15px;
+}
+
+.favoritesSortOptions input{
+	-webkit-appearance: none;
+	appearance: none;
+	width: 0;
+	height: 0;
+	position: absolute;
+	clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    margin-right: 8px;
+}
+
+.favoritesSortOptions input:checked + label {
+    display: inline-block;
+    width: auto;
+    height: 28px;
+    padding: 0 8px;
+    background: #FFFFFF;
+    border: 1px solid #41522E;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: -0.408px;
+    color: #41522E;
+    cursor: pointer;
+}
+
+.favoritesSortOptions input + label {
+    display: inline-block;
+    align-items: center;
+    padding: 0 8px;
+    height: 28px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: -0.408px;
+    color: #99A0A3;
+    cursor: pointer;
+}
+
+.favoritesSortOptions input:checked + label:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 18px;
+    width: 18px;
+    margin-left: 4px;
+    background-image: url(../../images/arrows-active.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.favoritesSortOptions input + label::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 18px;
+    width: 18px;
+    margin-left: 4px;
+    background-image: url(../../images/arrows.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.favoritesSortOptions input + label:hover {
+    color: rgb(105, 105, 105);
+    text-decoration: none;
+}
+
+.favoritesSortOptions label{
+    margin-bottom: 0;
+    margin-right: 8px;
+}
+
+.favoritesSortOptions label:last-child{
+    margin-right: 0;
+}
+
+.favorites h2{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 33px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    color: #424242;
+}
+
+.favorites ul{
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

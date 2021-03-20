@@ -1,0 +1,125 @@
+.hotels{
+    font-family: 'Roboto', sans-serif;
+    background: #E5E5E5;
+}
+
+.hotelInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 28px;
+}
+
+.hotelLocation{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.156;
+    color: #424242;
+}
+
+.hotelLocation span:first-child{
+    position: relative;
+    margin-right: 48px;
+}
+
+.hotelLocation span:first-child:after{
+    position: absolute;
+    content: '';
+    top: 2px;
+    right: -24px;
+    transform: translate(50%, 50%);
+    width: 9px;
+    height: 17px;
+    display: inline-block;
+    background-image: url('../../images/arrow-right-icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.hotelDate{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.1667;
+    color: #41522E;
+}
+
+.hotelsHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+    padding: 0 32px;
+}
+
+.hotelsHeader h2{
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.167;
+    color: #424242;
+}
+
+.hotelsExit{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.408px;
+    color: #41522E;
+    cursor: pointer;
+}
+
+.hotelsExit:hover{
+    text-decoration: none;
+    color: #41522E;
+}
+
+.hotelsExit::after{
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+    background-image: url(../../images/exit-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.hotelsExit:focus{
+    outline: none;
+}
+
+.hotelsWrapper{
+    max-width: 1048px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.hotelsPanel{
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    flex-grow: 1;
+    margin-right: 24px;
+}
+
+.hotelsPanel > div:first-child{
+    margin-bottom: 24px;
+}
+
+.hotelsMain{
+    max-width: 664px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 48px 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+}
